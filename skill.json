@@ -1,0 +1,34 @@
+{
+  "name": "genpark-cohere-enterprise-search-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Cohere-inspired enterprise semantic search with Embed, Rerank, and Command.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "cohere",
+    "embeddings",
+    "rerank",
+    "enterprise-search"
+  ],
+  "inputs": {
+    "query": {
+      "type": "string"
+    },
+    "documents": {
+      "type": "array"
+    },
+    "top_k": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "ranked_results": {
+      "type": "array"
+    },
+    "generated_answer": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
